@@ -1,4 +1,3 @@
-// ✅ src/Navigation/Navbar.js
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,16 +31,6 @@ const Navbar = () => {
                 <a className="nav-link" href={`#${section.toLowerCase()}`}>{section}</a>
               </li>
             ))}
-            <li className="nav-item ms-2">
-              <a
-                href="https://drive.google.com/file/d/1bTqShviKD9EtBZXvNEQOMWkf3pXirktV/view?usp=sharing"
-                className="btn btn-outline-primary btn-sm rounded-pill"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Resume
-              </a>
-            </li>
           </ul>
         </div>
       </div>
