@@ -1,0 +1,142 @@
+/* ================================
+   HERO SECTION
+================================== */
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0%   { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Texts */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  animation: float 4s ease-in-out infinite, fadeInUp 1s ease-in-out forwards;
+  cursor: default;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #ccc;
+  animation: fadeInUp 1.3s ease-in-out forwards;
+  cursor: default;
+}
+
+.hero-buttons {
+  animation: fadeInUp 1.6s ease-in-out forwards;
+  margin-top: 25px;
+}
+
+/* Highlight */
+.highlight {
+  color: #0d6efd;
+  transition: color 0.3s ease;
+}
+.highlight:hover {
+  color: #ffc107;
+}
+
+/* Buttons */
+.hero-buttons .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.hero-buttons .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+  cursor: pointer;
+}
+
+/* Cursor bubble (glow) */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.10), transparent 60%);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.10);
+  mix-blend-mode: difference;
+  z-index: 9999;
+  transition: transform 0.2s ease-out, background 0.3s;
+  transform: translate(-50%, -50%);
+}
+
+/* Consistent cursors */
+.hero-section * {
+  cursor: default;
+}
+.hero-buttons .btn {
+  cursor: pointer !important;
+}
+/* ✅ Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .bg-light {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .bg-white {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .text-dark {
+  color: #ddd !important;
+}
+
+.dark-mode .hero-section {
+  background: linear-gradient(to right, #0d0d0d, #1a1a1a);
+}
+
+.dark-mode .glass-card,
+.dark-mode .timeline-content,
+.dark-mode .skill-card,
+.dark-mode .contact-card .fw-semibold .skill-card {
+  background: rgba(40, 40, 40, 0.8);
+  color: #f1f1f1;
+}
+
+.dark-mode .btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.dark-mode .btn-outline-primary:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+/* *{
+  color: white;
+} */

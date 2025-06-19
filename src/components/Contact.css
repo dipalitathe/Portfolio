@@ -1,0 +1,69 @@
+.contact-section {
+  background: linear-gradient(to bottom right, #f5f5f5, #e9ecef);
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+form .form-control {
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+form .btn {
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-section a.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-section a.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .border-end {
+    border: none !important;
+  }
+}
+/* Freelance note blink animation */
+@keyframes pulseFade {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+.freelance-note {
+  font-weight: 600;
+  color: #198754;
+  animation: pulseFade 2s infinite;
+}

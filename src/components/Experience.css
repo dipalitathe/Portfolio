@@ -1,0 +1,77 @@
+.experience-section {
+  background: #fff;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 30px;
+  border-left: 2px solid #0d6efd;
+  
+}
+.timeline-item:hover{
+  transform: scale(1.03);
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+ border-radius: 10%;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -18px;
+  top: 2px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+
+.timeline-content {
+  background-color: #f8f9fa;
+  padding: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.timeline-content ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Optional: Make timeline responsive */
+@media (max-width: 576px) {
+  .timeline {
+    padding-left: 20px;
+    margin-left: 0;
+  }
+
+  .timeline-icon {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 0.9rem;
+    left: -14px;
+  }
+
+  .timeline-content {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+}

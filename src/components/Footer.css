@@ -1,0 +1,14 @@
+/* ✅ Footer link hover animation */
+.footer-link {
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #0d6efd; /* Bootstrap primary */
+  text-decoration: underline;
+}
+
+/* Optional: sticky bottom padding if content is short */
+footer {
+  font-size: 0.95rem;
+}

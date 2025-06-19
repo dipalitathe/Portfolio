@@ -1,0 +1,54 @@
+/* ✅ src/components/Projects/Projects.css */
+
+.project-thumb {
+  transition: transform .8s ease;
+  height: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.project-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(200, 200, 200, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+#projects .badge {
+  font-size: 0.75rem;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.btn-sm {
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .glass-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .glass-card p {
+    font-size: 0.9rem;
+  }
+
+  .project-thumb {
+    max-height: 200px;
+  }
+
+  .btn-sm {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+}
