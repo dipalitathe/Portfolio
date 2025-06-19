@@ -1,7 +1,9 @@
 .custom-navbar {
-  background: #fff;
+  background: #ffffff;
   padding: 20px 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  z-index: 999;
 }
 
 .navbar-scrolled {
@@ -41,4 +43,8 @@
 
 .navbar-toggler {
   border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }

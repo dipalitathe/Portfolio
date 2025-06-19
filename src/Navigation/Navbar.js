@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Navbar.css';
 import profileImage from '../Images/profile.jpg';
 
 const Navbar = () => {
@@ -21,9 +21,19 @@ const Navbar = () => {
           <img src={profileImage} className="logo-img me-2" alt="Dipak Shelake" />
           Dipak Shelake
         </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((section, i) => (

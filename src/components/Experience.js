@@ -3,18 +3,18 @@ import React from 'react';
 import './Experience.css';
 
 const experienceData = [
-  {
-    type: 'Experience',
-    title: 'Full Stack Developer Intern',
-    company: 'Startlazaa Pvt Ltd',
-    date: 'May 2024 – Sept 2024',
-    location: 'Onsite',
-    points: [
-      'Developed "Telims" and "Thealth" using ASP.NET, Bootstrap, and SQL Server.',
-      'Worked on front-end UIs, backend logic, and database integration.',
-      'Wrote clean, scalable code in a real-time collaborative team.',
-    ],
-  },
+  // {
+  //   type: 'Experience',
+  //   title: 'Full Stack Developer Intern',
+  //   company: 'Startlazaa Pvt Ltd',
+  //   date: 'May 2024 – Sept 2024',
+  //   location: 'Onsite',
+  //   points: [
+  //     'Developed "Telims" and "Thealth" using ASP.NET, Bootstrap, and SQL Server.',
+  //     'Worked on front-end UIs, backend logic, and database integration.',
+  //     'Wrote clean, scalable code in a real-time collaborative team.',
+  //   ],
+  // },
   {
     type: 'Freelance',
     title: 'Web UI Designer',
