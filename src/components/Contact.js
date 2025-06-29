@@ -34,9 +34,9 @@ const Contact = () => {
         <p className="text-center text-muted mb-3">
           Whether you have a question, a project, or just want to say hi — I'm always open to connect!
         </p>
-          <p className="text-center mb-3 freelance-note">
-            ✅ Available for freelance & contract-based projects.
-          </p>
+        <p className="text-center mb-3 freelance-note">
+          ✅ Available for freelance & contract-based projects.
+        </p>
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="contact-card">
@@ -45,13 +45,13 @@ const Contact = () => {
                 <div className="col-12 col-md-4 border-end">
                   <div className="h-100 d-flex flex-column justify-content-center">
                     <h5 className="fw-bold mb-3">📬 Contact Details</h5>
-                    <p className="mb-2"><strong>Email:</strong><br /> dipakarnav1432@gmail.com</p>
-                    <p className="mb-2"><strong>Phone:</strong><br /> +91 76667 34838</p>
-                    <p className="mb-2"><strong>Location:</strong><br /> Pune, Maharashtra, India</p>
+                    <p className="mb-2"><strong>Email:</strong><br /> dipalidinkartathe491@gmail.com</p>
+                    <p className="mb-2"><strong>Phone:</strong><br /> +91 93222 53840</p>
+                    <p className="mb-2"><strong>Location:</strong><br /> Parbhani, Maharashtra, India</p>
                     <p className="mb-2"><strong>Availability:</strong><br /> Remote / Onsite</p>
                     <div className="mt-3 d-flex gap-2">
-                      <a href="https://github.com/dipakarnav" style={{ height: '40px', width: '100px', padding: '7px' }} className="btn btn-sm btn-dark rounded-pill" target="_blank" rel="noreferrer">GitHub</a>
-                      <a href="https://linkedin.com/in/dipakarnav" style={{ height: '40px', width: '100px', padding: '7px' }} className="btn btn-sm btn-primary rounded-pill" target="_blank" rel="noreferrer">LinkedIn</a>
+                      <a href="https://github.com/dipalitathe/AboutME" style={{ height: '40px', width: '100px', padding: '7px' }} className="btn btn-sm btn-dark rounded-pill" target="_blank" rel="noreferrer">GitHub</a>
+                      <a href="https://www.linkedin.com/in/dipali-tathe-373b69356/" style={{ height: '40px', width: '100px', padding: '7px' }} className="btn btn-sm btn-primary rounded-pill" target="_blank" rel="noreferrer">LinkedIn</a>
                     </div>
                   </div>
                 </div>

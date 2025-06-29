@@ -3,58 +3,35 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Projects.css';
-import ecommerceImg from '../Images/E-Commerce Medicine.jpeg';
-import hostelImg from '../Images/Hostel Management System.jpeg';
-import dairyImg from '../Images/Dairy Management System.jpg';
-import telimsImg from '../Images/Telims (Lab Management).jpeg';
-import thealthImg from '../Images/Thealth (Hospital Management).jpeg';
-import promolinkImg from '../Images/Promolink (Current).png';
+import smartAgriImg from '../Images/SmartAgri.jpeg';
+import hostelImg from '../Images/HostelManagementSystem.jpeg';
+import magicTeaImg from '../Images/MagicTea.jpeg';
+
 const projects = [
   {
-    title: 'E-Commerce Medicine',
-    tech: ['ASP.NET', 'SQL Server'],
-    description: 'Online pharmacy platform to browse, search, and order medicines with a smooth user experience.',
-    image: ecommerceImg,
-    demo: '#',
+    title: 'Smart Agri',
+    tech: ['React JS', 'Bootstrap', 'JavaScript'],
+    description:
+      'Built a responsive agricultural web app for real-time crop tracking and data visualization.',
+    image: smartAgriImg,
+    demo: 'unavailable',
     github: '#',
   },
   {
     title: 'Hostel Management System',
-    tech: ['ASP.NET', 'SQL Server'],
-    description: 'Desktop application to manage hostel operations like room allocation, student data, and payments.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    description:
+      'Created a web-based system to manage hostel rooms, forms, dashboards, and student data.',
     image: hostelImg,
-    demo: '#',
-    github: '#',
-  },
-  {
-    title: 'Dairy Management System',
-    tech: ['ASP.NET', 'SQL Server'],
-    description: 'Web application to handle dairy product management, supply tracking, and customer billing.',
-    image: dairyImg,
-    demo: '#',
-    github: '#',
-  },
-  {
-    title: 'Telims (Lab Management)',
-    tech: ['ASP.NET', 'Bootstrap', 'SQL Server'],
-    description: 'A medical lab management system to handle test orders, lab staff, and report generation.',
-    image: telimsImg,
     demo: 'unavailable',
     github: '#',
   },
   {
-    title: 'Thealth (Hospital Management)',
-    tech: ['ASP.NET', 'SQL Server'],
-    description: 'Hospital management platform for tracking patient details, staff, appointments, and billing.',
-    image: thealthImg,
-    demo: 'unavailable',
-    github: '#',
-  },
-  {
-    title: 'Promolink (Current)',
-    tech: ['React', 'JavaScript', 'Bootstrap'],
-    description: 'Web application for task management and customer order processing, used internally at Binated Inc.',
-    image: promolinkImg,
+    title: 'Magic Tea',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    description:
+      'Designed a visually engaging site for a tea brand to enhance customer experience.',
+    image: magicTeaImg,
     demo: 'unavailable',
     github: '#',
   },
@@ -79,7 +56,9 @@ const Projects = () => {
         <h2 className="text-center mb-5 text-primary fw-bold">Projects</h2>
         {projects.map((proj, index) => (
           <div
-            className={`row align-items-center mb-5 ${index % 2 !== 0 ? 'flex-row-reverse' : ''}`}
+            className={`row align-items-center mb-5 ${
+              index % 2 !== 0 ? 'flex-row-reverse' : ''
+            }`}
             key={index}
             data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
           >
@@ -87,8 +66,13 @@ const Projects = () => {
               <img
                 src={proj.image}
                 alt={proj.title}
-                style={{width:'70%',height:'220px',display:'block', margin:'auto'}}
-                className="img-fluid  rounded shadow project-thumb"
+                style={{
+                  width: '70%',
+                  height: '220px',
+                  display: 'block',
+                  margin: 'auto',
+                }}
+                className="img-fluid rounded shadow project-thumb"
               />
             </div>
             <div className="col-md-6">
@@ -96,10 +80,12 @@ const Projects = () => {
                 <h3 className="fw-bold">{proj.title}</h3>
                 <div className="mb-2">
                   {proj.tech.map((tech, i) => (
-                    <span className="badge bg-primary me-2 mb-1" key={i}>{tech}</span>
+                    <span className="badge bg-primary me-2 mb-1" key={i}>
+                      {tech}
+                    </span>
                   ))}
                 </div>
-                <p  className="text-muted">{proj.description}</p>
+                <p className="text-muted">{proj.description}</p>
                 <div className="d-flex gap-3 mt-3 flex-wrap">
                   <button
                     className="btn btn-outline-primary btn-sm"

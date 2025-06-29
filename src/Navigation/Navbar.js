@@ -18,8 +18,8 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg custom-navbar sticky-top ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container">
         <a className="navbar-brand fw-bold d-flex align-items-center" href="#home">
-          <img src={profileImage} className="logo-img me-2" alt="Dipak Shelake" />
-          Dipak Shelake
+          <img src={profileImage} className="logo-img me-2" alt="Dipali Dinkar Tathe" />
+          Dipali Dinkar Tathe
         </a>
 
         <button
@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((section, i) => (
+            {['About', 'Skills', 'Projects', 'Contact'].map((section, i) => (
               <li className="nav-item" key={i}>
                 <a className="nav-link" href={`#${section.toLowerCase()}`}>{section}</a>
               </li>

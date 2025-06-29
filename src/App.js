@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import Experience from './components/Experience';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -43,17 +42,17 @@ function App() {
         className="hero-section d-flex flex-column justify-content-center align-items-center text-center"
       >
         <h1 className="hero-title">
-          Hi, I'm <span className="highlight">Dipak Shelake</span>
+          Hi, I'm <span className="highlight">Dipali Dinkar Tathe</span>
         </h1>
         <p className="hero-subtitle">
-          Software Developer | Full Stack Engineer | UI Designer
+          Front-End Developer | React Enthusiast | UI Designer
         </p>
         <div className="hero-buttons mt-4">
           <a href="#projects" className="btn btn-primary me-3">
             View Projects
           </a>
           <a
-            href="https://drive.google.com/file/d/1bTqShviKD9EtBZXvNEQOMWkf3pXirktV/view?usp=sharing"
+            href="https://drive.google.com/file/d/1nUowvRIiI21lDEkPGsrbBQmGUL3_hOIL/view?usp=sharing"
             className="btn btn-outline-light"
             target="_blank"
             rel="noreferrer"
@@ -67,7 +66,6 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Experience />
       <Contact />
       <Footer />
     </>

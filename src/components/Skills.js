@@ -7,18 +7,21 @@ import {
   FaCss3Alt,
   FaBootstrap,
   FaJsSquare,
-  FaDatabase,
 } from 'react-icons/fa';
-import { SiMysql, SiDotnet } from 'react-icons/si';
+import { SiMysql, SiCplusplus, SiC } from 'react-icons/si';
+import { DiJava, DiJqueryLogo } from 'react-icons/di';
+
 
 const skills = [
   { name: 'React.js', icon: <FaReact />, category: 'Frontend' },
   { name: 'JavaScript', icon: <FaJsSquare />, category: 'Frontend' },
   { name: 'HTML5', icon: <FaHtml5 />, category: 'Frontend' },
   { name: 'CSS3', icon: <FaCss3Alt />, category: 'Frontend' },
+  { name: 'JQUERY', icon: <DiJqueryLogo />, category: 'Frontend' },
   { name: 'Bootstrap', icon: <FaBootstrap />, category: 'Frontend' },
-  { name: 'ASP.NET', icon: <SiDotnet />, category: 'Backend' },
-  { name: 'SQL Server', icon: <FaDatabase />, category: 'Database' },
+  { name: 'Core Java', icon: <DiJava />, category: 'Programming' },
+  { name: 'C++', icon: <SiCplusplus />, category: 'Programming' },
+  { name: 'C', icon: <SiC />, category: 'Programming' },
   { name: 'MySQL', icon: <SiMysql />, category: 'Database' },
 ];
 
@@ -31,7 +34,7 @@ const Skills = () => {
           {skills.map((skill, i) => (
             <div className="col-6 col-md-3" key={i}>
               <div className="skill-card text-center p-4 shadow-sm rounded-3 h-100">
-                <div className="skill-icon mb-3 text-primary">{skill.icon}</div>
+                <div className="skill-icon mb-3 text-primary fs-1">{skill.icon}</div>
                 <h6 className="fw-semibold">{skill.name}</h6>
                 <p className="text-muted small mb-0">{skill.category}</p>
               </div>
