@@ -10,10 +10,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_j6wix83',
-        'template_cwqsobp',
+        'service_j6wix83',         // ✅ Your Service ID
+        'template_cwqsobp',        // ✅ Template that sends to you
         form.current,
-        'tfegzOVnMVmp9sJF5'
+        'tfegzOVnMVmp9sJF5'        // ✅ Your Public Key (User ID)
       )
       .then(
         () => {
@@ -41,7 +41,7 @@ const Contact = () => {
           <div className="col-lg-10">
             <div className="contact-card">
               <div className="row g-4">
-                {/* Contact Info Block */}
+                {/* Contact Info */}
                 <div className="col-12 col-md-4 border-end">
                   <div className="h-100 d-flex flex-column justify-content-center">
                     <h5 className="fw-bold mb-3">📬 Contact Details</h5>
@@ -50,8 +50,8 @@ const Contact = () => {
                     <p className="mb-2"><strong>Location:</strong><br /> Parbhani, Maharashtra, India</p>
                     <p className="mb-2"><strong>Availability:</strong><br /> Remote / Onsite</p>
                     <div className="mt-3 d-flex gap-2">
-                      <a href="https://github.com/dipalitathe/AboutME" style={{ height: '40px', width: '100px', padding: '7px' }} className="btn btn-sm btn-dark rounded-pill" target="_blank" rel="noreferrer">GitHub</a>
-                      <a href="https://www.linkedin.com/in/dipali-tathe-373b69356/" style={{ height: '40px', width: '100px', padding: '7px' }} className="btn btn-sm btn-primary rounded-pill" target="_blank" rel="noreferrer">LinkedIn</a>
+                      <a href="https://github.com/dipalitathe/AboutME" className="btn btn-sm btn-dark rounded-pill" target="_blank" rel="noreferrer" style={{ width: '100px', padding: '7px' }}>GitHub</a>
+                      <a href="https://www.linkedin.com/in/dipali-tathe-373b69356/" className="btn btn-sm btn-primary rounded-pill" target="_blank" rel="noreferrer" style={{ width: '100px', padding: '7px' }}>LinkedIn</a>
                     </div>
                   </div>
                 </div>
@@ -77,7 +77,6 @@ const Contact = () => {
                     </div>
                   </form>
                 </div>
-
               </div> {/* row */}
             </div>
           </div>
