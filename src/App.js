@@ -52,7 +52,7 @@ function App() {
             View Projects
           </a>
           <a
-            href="https://drive.google.com/file/d/1nUowvRIiI21lDEkPGsrbBQmGUL3_hOIL/view?usp=sharing"
+            href="https://drive.google.com/file/d/11P--92C3I2PtkFLmaiJxiRo8tpaaPb3O/view"
             className="btn btn-outline-light"
             target="_blank"
             rel="noreferrer"
